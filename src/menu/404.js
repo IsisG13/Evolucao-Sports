@@ -14,6 +14,12 @@ import Galeria3 from "../img/gallery/gallery-3.png";
 import Galeria4 from "../img/gallery/gallery-4.jpg";
 import Galeria5 from "../img/gallery/gallery-5.png";
 import Galeria6 from "../img/gallery/gallery-6.png";
+import Team1 from "../img/team/team.1.jpg";
+import Team2 from "../img/team/team-2.png";
+import Team3 from "../img/team/team-3.jpg";
+import Team4 from "../img/team/team-4.jpg";
+import Team5 from "../img/team/team-5.jpg";
+import Team6 from "../img/team/team-6.jpg";
 
 import "../css/bootstrap.min.css";
 import "../css/font-awesome.min.css";
@@ -23,6 +29,7 @@ import "../css/magnific-popup.css";
 import "../css/slicknav.min.css";
 import "../css/style.css";
 import { Link } from "react-router-dom";
+import Cabecalho from "../components/cabecalho";
 import Footer from "../components/footer";
 import ChoseUs from "../components/ChoseUs";
 import Preco from "../components/preco";
@@ -244,7 +251,61 @@ function Erro() {
       </section>
       {/* Hero Section End  */}
 
-      <ChoseUs />
+      {/* ChoseUs Section Begin  */}
+      <section className="choseus-section spad">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="section-title">
+                <span>POR QUE TREINAR JIU JITSU?</span>
+                <h2>AQUI ESTÃO QUATRO BENEFÍCIOS DE TREINAR JIU JITSU</h2>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-lg-3 col-sm-6">
+              <div className="cs-item">
+                <span className="flaticon-034-stationary-bike"></span>
+                <h4>Melhor Condicionamento Físico</h4>
+                <p>
+                  Jiu Jitsu ajuda a ficar mais forte, flexível e com melhor
+                  resistência.
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-3 col-sm-6">
+              <div className="cs-item">
+                <span className="flaticon-033-juice"></span>
+                <h4>Disciplina</h4>
+                <p>
+                  Praticar regularmente ensina a definir metas e a manter
+                  compromissos.
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-3 col-sm-6">
+              <div className="cs-item">
+                <span className="flaticon-002-dumbell"></span>
+                <h4>Confiança</h4>
+                <p>
+                  À medida que você aprende e evolui, sua autoconfiança aumenta.
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-3 col-sm-6">
+              <div className="cs-item">
+                <span className="flaticon-014-heart-beat"></span>
+                <h4>Autodefesa</h4>
+                <p>
+                  Jiu Jitsu é eficaz para se proteger em situações de confronto
+                  físico.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* ChoseUs Section End  */}
 
       {/* Classes Section Begin  */}
       <section className="classes-section spad">
@@ -333,7 +394,91 @@ function Erro() {
       </section>
       {/* ChoseUs Section End  */}
 
-      <Preco />
+      {/* Pricing Section Begin  */}
+      <section className="pricing-section spad">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="section-title">
+                <span>Nossos Planos</span>
+                <h2>Escolha seu plano de preços</h2>
+              </div>
+            </div>
+          </div>
+          <div className="row justify-content-center">
+            <div className="col-lg-4 col-md-8">
+              <div className="ps-item">
+                <h3>Aula presencial</h3>
+                <div className="pi-price">
+                  <h2>R$ XX.XX</h2>
+                  <span>classe única</span>
+                </div>
+                <ul>
+                  <li>Volta gratuita</li>
+                  <li>Equipamentos ilimitados</li>
+                  <li>Treinador pessoal</li>
+                  <li>Aulas para perder peso</li>
+                  <li>Sem restrição de tempo</li>
+                </ul>
+                <a
+                  href="https://api.whatsapp.com/send?1=pt_BR&phone=5575981864590"
+                  target="_blank"
+                  className="primary-btn pricing-btn"
+                >
+                  Inscreva-se agora
+                </a>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-8">
+              <div className="ps-item">
+                <h3>12 meses ilimitados</h3>
+                <div className="pi-price">
+                  <h2>R$ XX.XX</h2>
+                  <span>Classe Única</span>
+                </div>
+                <ul>
+                  <li>Volta gratuita</li>
+                  <li>Equipamentos ilimitados</li>
+                  <li>Treinador pessoal</li>
+                  <li>Aulas para perder peso</li>
+                  <li>Sem restrição de tempo</li>
+                </ul>
+                <a
+                  href="https://api.whatsapp.com/send?1=pt_BR&phone=5575981864590"
+                  target="_blank"
+                  className="primary-btn pricing-btn"
+                >
+                  Inscreva-se agora
+                </a>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-8">
+              <div className="ps-item">
+                <h3>6 meses ilimitados</h3>
+                <div className="pi-price">
+                  <h2>R$ XX.XX</h2>
+                  <span>Classe única</span>
+                </div>
+                <ul>
+                  <li>Volta gratuita</li>
+                  <li>Equipamentos ilimitados</li>
+                  <li>Treinador pessoal</li>
+                  <li>Aulas para perder peso</li>
+                  <li>Sem restrição de tempo</li>
+                </ul>
+                <a
+                  href="https://api.whatsapp.com/send?1=pt_BR&phone=5575981864590"
+                  target="_blank"
+                  className="primary-btn pricing-btn"
+                >
+                  Inscreva-se agora
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Pricing Section End  */}
 
       {/* Gallery Section Begin  */}
       <div className="gallery-section">
@@ -391,9 +536,175 @@ function Erro() {
       </div>
       {/* Gallery Section End  */}
 
-      <Time />
+      {/* Team Section Begin  */}
+      <section className="team-section spad">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="team-title">
+                <div className="section-title">
+                  <span>NOSSOS TREINADORES</span>
+                  <h2>TREINE COM ESPECIALISTAS</h2>
+                </div>
+                <a
+                  href="https://www.instagram.com/evolucao.sports_/"
+                  target="_blank"
+                  className="primary-btn btn-normal appoinment-btn"
+                >
+                  Ver mais
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="ts-slider owl-carousel">
+              <div className="col-lg-4">
+                <div
+                  className="ts-item set-bg"
+                  style={{ backgroundImage: `url(${Team1})` }}
+                >
+                  <div className="ts_text">
+                    <h4>Rodrigo Campos</h4>
+                    <span>Sensei</span>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4">
+                <div
+                  className="ts-item set-bg"
+                  style={{ backgroundImage: `url(${Team2})` }}
+                >
+                  <div className="ts_text">
+                    <h4>Fabio Pirez</h4>
+                    <span>Atleta</span>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4">
+                <div
+                  className="ts-item set-bg"
+                  style={{ backgroundImage: `url(${Team3})` }}
+                >
+                  <div className="ts_text">
+                    <h4>Henrique Viera</h4>
+                    <span>Sensei</span>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4">
+                <div
+                  className="ts-item set-bg"
+                  style={{ backgroundImage: `url(${Team4})` }}
+                >
+                  <div className="ts_text">
+                    <h4>Rodrigo Campos e Henrique Viera</h4>
+                    <span>Sensei</span>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4">
+                <div
+                  className="ts-item set-bg"
+                  style={{ backgroundImage: `url(${Team5})` }}
+                >
+                  <div className="ts_text">
+                    <h4>Francyelle Figueredo</h4>
+                    <span>Atleta</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Team Section End  */}
 
-      <Footer />
+      {/* Footer Section Begin  */}
+      <section className="footer-section">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-4">
+              <div className="fs-about">
+                <div className="fa-logo">
+                  <a href="#">
+                    <img src={Logo} alt="" />
+                  </a>
+                </div>
+                <p>
+                  A Evolução Sports é muito mais do que apenas uma academia
+                  comum; é um centro de transformação física e mental. Com uma
+                  ampla gama de modalidades e serviços disponíveis
+                </p>
+                <div className="fa-social">
+                  <a href="#">
+                    <i className="fa fa-facebook"></i>
+                  </a>
+                  <a href="#">
+                    <i className="fa fa-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i className="fa fa-youtube-play"></i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/evolucao.sports_/"
+                    target="_blank"
+                  >
+                    <i className="fa fa-instagram"></i>
+                  </a>
+                  <a href="#">
+                    <i className="fa  fa-envelope-o"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-4 col-md-6">
+              <div className="fs-widget">
+                <h4>Dicas e Guias</h4>
+                <div className="fw-recent">
+                  <h6>
+                    <a href="#">
+                      A aptidão física pode ajudar a prevenir a depressão e a
+                      ansiedade
+                    </a>
+                  </h6>
+                  <ul>
+                    <li>3 minutos de leitura</li>
+                    <li>20 Comentários</li>
+                  </ul>
+                </div>
+                <div className="fw-recent">
+                  <h6>
+                    <a href="#">
+                      Jiu Jitsu: A arte marcial suprema para eliminar a gordura
+                      abdominal e tonificar seu corpo enquanto domina
+                      habilidades de autodefesa.
+                    </a>
+                  </h6>
+                  <ul>
+                    <li>3 minutos de leitura</li>
+                    <li>20 Comentários</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-lg-12 text-center">
+              <div className="copyright-text">
+                <p>
+                  Copyright &copy;
+                  <script>document.write(new Date().getFullYear());</script> All
+                  rights reserved | This is made with
+                  <i className="fa fa-heart" aria-hidden="true"></i> Isis
+                  <a href="https://colorlib.com" target="_blank"></a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Footer Section End  */}
     </div>
   );
 }
