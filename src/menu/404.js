@@ -19,7 +19,6 @@ import Team2 from "../img/team/team-2.png";
 import Team3 from "../img/team/team-3.jpg";
 import Team4 from "../img/team/team-4.jpg";
 import Team5 from "../img/team/team-5.jpg";
-import Team6 from "../img/team/team-6.jpg";
 
 import "../css/bootstrap.min.css";
 import "../css/font-awesome.min.css";
