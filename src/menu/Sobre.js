@@ -6,6 +6,11 @@ import About from "../img/about-us.jpg";
 import Logo from "../img/logo.png";
 import Testimonial1 from "../img/testimonial/testimonial-1.jpg";
 import Testimonial2 from "../img/testimonial/testimonial-2.jpg";
+import Team1 from "../img/team/team.1.jpg";
+import Team2 from "../img/team/team-2.png";
+import Team3 from "../img/team/team-3.jpg";
+import Team4 from "../img/team/team-4.jpg";
+import Team5 from "../img/team/team-5.jpg";
 
 import "../css/bootstrap.min.css";
 import "../css/font-awesome.min.css";
@@ -15,14 +20,11 @@ import "../css/magnific-popup.css";
 import "../css/slicknav.min.css";
 import "../css/style.css";
 import { Link } from "react-router-dom";
-import Cabecalho from "../components/cabecalho";
+import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import "jquery";
 import "owl.carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
-import Footer from "../components/footer";
-import ChoseUs from "../components/ChoseUs";
-import Time from "../components/time";
 
 const Oitenta = {
   background: "rgb(255, 255, 255)",
@@ -114,7 +116,125 @@ function Sobre() {
 
   return (
     <div className="App">
-      <Cabecalho />
+      {/* Page Preloder */}
+      <div className="preloder">
+        <div className="loader"></div>
+      </div>
+
+      {/* Offcanvas Menu Section Begin */}
+      <div className="offcanvas-menu-overlay active"></div>
+      <div className="offcanvas-menu-wrapper">
+        <div className="canvas-close">
+          <i className="fa fa-close"></i>
+        </div>
+        <div className="canvas-search search-switch">
+          <i className="fa fa-search"></i>
+        </div>
+        <nav className="canvas-menu mobile-menu">
+          <ul>
+            <li>
+              <Link to="/">Inicio</Link>
+            </li>
+            <li>
+              <Link to="/Sobre">Sobre Nós</Link>
+            </li>
+            <li>
+              <Link to="/Details">Aulas</Link>
+            </li>
+            <li>
+              <Link to="/Servicos">Servicos</Link>
+            </li>
+            <li>
+              <Link to="/NossoTime">Nosso Time</Link>
+            </li>
+            <li>
+              <Link to="/Sobre">Pages</Link>
+              <ul className="dropdow">
+                <li>
+                  <Link to="/Sobre">Sobre Nós</Link>
+                </li>
+                <li>
+                  <Link to="/Horarios">Horarios</Link>
+                </li>
+
+                <li>
+                  <Link to="/NossoTime">Nosso Time</Link>
+                </li>
+                <li>
+                  <Link to="/Galeria">Galeria</Link>
+                </li>
+                <li>
+                  <Link to="/NossoBlog">Nosso Blog</Link>
+                </li>
+                <li>
+                  <Link to="/404">404</Link>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <Link to="/Contato">Contato</Link>
+            </li>
+          </ul>
+        </nav>
+        <div id="mobile-menu-wrap">
+          <div className="slicknav_menu">
+            <nav
+              className="slicknav_nav slicknav_hidden"
+              aria-hidden="true"
+              role="menu"
+            >
+              <ul>
+                <li>
+                  <Link to="/">Inicio</Link>
+                </li>
+                <li>
+                  <Link to="/Sobre">Sobre Nós</Link>
+                </li>
+                <li>
+                  <Link to="/Details">Aulas</Link>
+                </li>
+                <li>
+                  <Link to="/Servicos">Servicos</Link>
+                </li>
+                <li>
+                  <Link to="/NossoTime">Nosso Time</Link>
+                </li>
+                <li>
+                  <Link to="/Horarios">Horarios</Link>
+                </li>
+
+                <li>
+                  <Link to="/Galeria">Galeria</Link>
+                </li>
+                <li>
+                  <Link to="/NossoBlog">NossoBlog</Link>
+                </li>
+                <li>
+                  <Link to="/404">404</Link>
+                </li>
+                <li>
+                  <Link to="/Contato">Contato</Link>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div className="canvas-social">
+          <a href="#">
+            <i className="fa fa-facebook"></i>
+          </a>
+          <a href="#">
+            <i className="fa fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i className="fa fa-youtube-play"></i>
+          </a>
+          <a href="#">
+            <i className="fa fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+      {/* Offcanvas Menu Section End */}
 
       {/* Header Section Begin */}
       <header className="header-section">
@@ -225,7 +345,61 @@ function Sobre() {
       </section>
       {/* Breadcrumb Section End  */}
 
-      <ChoseUs />
+      {/* ChoseUs Section Begin  */}
+      <section className="choseus-section spad">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="section-title">
+                <span>POR QUE TREINAR JIU JITSU?</span>
+                <h2>AQUI ESTÃO QUATRO BENEFÍCIOS DE TREINAR JIU JITSU</h2>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-lg-3 col-sm-6">
+              <div className="cs-item">
+                <span className="flaticon-034-stationary-bike"></span>
+                <h4>Melhor Condicionamento Físico</h4>
+                <p>
+                  Jiu Jitsu ajuda a ficar mais forte, flexível e com melhor
+                  resistência.
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-3 col-sm-6">
+              <div className="cs-item">
+                <span className="flaticon-033-juice"></span>
+                <h4>Disciplina</h4>
+                <p>
+                  Praticar regularmente ensina a definir metas e a manter
+                  compromissos.
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-3 col-sm-6">
+              <div className="cs-item">
+                <span className="flaticon-002-dumbell"></span>
+                <h4>Confiança</h4>
+                <p>
+                  À medida que você aprende e evolui, sua autoconfiança aumenta.
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-3 col-sm-6">
+              <div className="cs-item">
+                <span className="flaticon-014-heart-beat"></span>
+                <h4>Autodefesa</h4>
+                <p>
+                  Jiu Jitsu é eficaz para se proteger em situações de confronto
+                  físico.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* ChoseUs Section End  */}
 
       {/* About US Section Begin  */}
       <section className="aboutus-section">
@@ -330,7 +504,88 @@ function Sobre() {
       </section>
       {/* About US Section End  */}
 
-      <Time />
+      {/* Team Section Begin  */}
+      <section className="team-section spad">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="team-title">
+                <div className="section-title">
+                  <span>NOSSOS TREINADORES</span>
+                  <h2>TREINE COM ESPECIALISTAS</h2>
+                </div>
+                <a
+                  href="https://www.instagram.com/evolucao.sports_/"
+                  target="_blank"
+                  className="primary-btn btn-normal appoinment-btn"
+                >
+                  Ver mais
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="ts-slider owl-carousel">
+              <div className="col-lg-4">
+                <div
+                  className="ts-item set-bg"
+                  style={{ backgroundImage: `url(${Team1})` }}
+                >
+                  <div className="ts_text">
+                    <h4>Rodrigo Campos</h4>
+                    <span>Sensei de Jiu jitsu</span>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4">
+                <div
+                  className="ts-item set-bg"
+                  style={{ backgroundImage: `url(${Team2})` }}
+                >
+                  <div className="ts_text">
+                    <h4>Fabio Pirez</h4>
+                    <span>Atleta</span>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4">
+                <div
+                  className="ts-item set-bg"
+                  style={{ backgroundImage: `url(${Team3})` }}
+                >
+                  <div className="ts_text">
+                    <h4>Henrique Viera</h4>
+                    <span>Sensei de Jiu jitsu</span>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4">
+                <div
+                  className="ts-item set-bg"
+                  style={{ backgroundImage: `url(${Team4})` }}
+                >
+                  <div className="ts_text">
+                    <h4>Rodrigo Campos e Henrique Viera</h4>
+                    <span>Sensei</span>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4">
+                <div
+                  className="ts-item set-bg"
+                  style={{ backgroundImage: `url(${Team5})` }}
+                >
+                  <div className="ts_text">
+                    <h4>Francyelle Figueredo</h4>
+                    <span>Atleta</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Team Section End  */}
 
       {/* Banner Section Begin  */}
       <section
@@ -429,7 +684,138 @@ function Sobre() {
       </section>
       {/* Testimonial Section End  */}
 
-      <Footer />
+      {/* Get In Touch Section Begin  */}
+      <div className="gettouch-section">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-4">
+              <div className="gt-text">
+                <i className="fa fa-map-marker"></i>
+                <p>
+                  Av. Santo Antônio
+                  <br />
+                  Capuchinhos, Feira de Santana - BA,
+                </p>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="gt-text">
+                <i className="fa fa-mobile"></i>
+                <p>(75) 9702-3456</p>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="gt-text email">
+                <i className="fa fa-envelope"></i>
+                <p>EvolucaoSports@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Get In Touch Section End  */}
+
+      {/* Footer Section Begin  */}
+      <section className="footer-section">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-4">
+              <div className="fs-about">
+                <div className="fa-logo">
+                  <a href="#">
+                    <img src={Logo} alt="" />
+                  </a>
+                </div>
+                <p>
+                  A Evolução Sports é muito mais do que apenas uma academia
+                  comum; é um centro de transformação física e mental. Com uma
+                  ampla gama de modalidades e serviços disponíveis
+                </p>
+                <div className="fa-social">
+                  <a href="#">
+                    <i className="fa fa-facebook"></i>
+                  </a>
+                  <a href="#">
+                    <i className="fa fa-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i className="fa fa-youtube-play"></i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/evolucao.sports_/"
+                    target="_blank"
+                  >
+                    <i className="fa fa-instagram"></i>
+                  </a>
+                  <a href="#">
+                    <i className="fa  fa-envelope-o"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-4 col-md-6">
+              <div className="fs-widget">
+                <h4>Dicas e Guias</h4>
+                <div className="fw-recent">
+                  <h6>
+                    <a href="#">
+                      A aptidão física pode ajudar a prevenir a depressão e a
+                      ansiedade
+                    </a>
+                  </h6>
+                  <ul>
+                    <li>3 minutos de leitura</li>
+                    <li>20 Comentários</li>
+                  </ul>
+                </div>
+                <div className="fw-recent">
+                  <h6>
+                    <a href="#">
+                      Jiu Jitsu: A arte marcial suprema para eliminar a gordura
+                      abdominal e tonificar seu corpo enquanto domina
+                      habilidades de autodefesa.
+                    </a>
+                  </h6>
+                  <ul>
+                    <li>3 minutos de leitura</li>
+                    <li>20 Comentários</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-lg-12 text-center">
+              <div className="copyright-text">
+                <p>
+                  Copyright &copy;
+                  <script>document.write(new Date().getFullYear());</script> All
+                  rights reserved | This is made with
+                  <i className="fa fa-heart" aria-hidden="true"></i> Isis
+                  <a href="https://colorlib.com" target="_blank"></a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Footer Section End  */}
+
+      {/* Search model Begin  */}
+      <div className="search-model">
+        <div className="h-100 d-flex align-items-center justify-content-center">
+          <div className="search-close-switch">+</div>
+          <form className="search-model-form">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Search here....."
+            />
+          </form>
+        </div>
+      </div>
+      {/* Search model end  */}
     </div>
   );
 }

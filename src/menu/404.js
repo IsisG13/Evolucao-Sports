@@ -23,7 +23,6 @@ import "../css/magnific-popup.css";
 import "../css/slicknav.min.css";
 import "../css/style.css";
 import { Link } from "react-router-dom";
-import Cabecalho from "../components/cabecalho";
 import Footer from "../components/footer";
 import ChoseUs from "../components/ChoseUs";
 import Preco from "../components/preco";
