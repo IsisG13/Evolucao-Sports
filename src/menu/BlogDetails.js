@@ -1,7 +1,25 @@
 import "../App.css";
 import Logo from "../img/logo.png";
 import React, { useEffect } from "react";
+
+import Breadcrumb from "../img/breadcrumb-bg.jpg";
+
+import Sidebar from "../img/sidebar-banner.jpeg";
+import Latest from "../img/letest-blog/latest-1.jpg";
+import Blog1 from "../img/blog/blog-1.jpg";
+import Blog2 from "../img/blog/blog-2.jpg";
+import Blog3 from "../img/blog/blog-3.jpg";
+import Blog4 from "../img/blog/blog-4.jpg";
+import Blog5 from "../img/blog/blog-5.jpg";
+
+import Blog6 from "../img/letest-blog/latest-2.jpg";
+import Blog7 from "../img/letest-blog/latest-3.jpg";
+import Blog8 from "../img/letest-blog/latest-4.jpg";
+import Blog9 from "../img/letest-blog/latest-5.jpg";
 import Perfil from "../img/blog/details/blog-profile.jpg";
+import C1 from "../img/blog/details/comment-1.jpg";
+import C2 from "../img/blog/details/comment-2.jpg";
+import C3 from "../img/blog/details/comment-3.jpg";
 import D1 from "../img/blog/details/details-1.jpg";
 import D2 from "../img/blog/details/details-2.jpg";
 import Hero from "../img/blog/details/details-hero.jpg";
