@@ -20,7 +20,6 @@ import "../css/magnific-popup.css";
 import "../css/slicknav.min.css";
 import "../css/style.css";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import "jquery";
 import "owl.carousel";
